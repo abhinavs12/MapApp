@@ -34,58 +34,77 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDj-Dy-noc">
+                                <rect key="frame" x="16" y="57" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Po1-CX-3f2">
                                 <rect key="frame" x="262" y="57" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="iPM-ap-cu5"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7q-js-dOE">
-                                <rect key="frame" x="163" y="104" width="48" height="30"/>
+                                <rect key="frame" x="286" y="592" width="48" height="30"/>
                                 <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eBk-GC-cXr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkg-Bd-9Lf">
-                                <rect key="frame" x="134" y="596" width="108" height="30"/>
+                                <rect key="frame" x="16" y="592" width="108" height="30"/>
                                 <state key="normal" title="See in Map App"/>
                                 <connections>
                                     <action selector="seeInMapApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JeN-5T-kl8"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XDj-Dy-noc">
-                                <rect key="frame" x="16" y="57" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="gRU-6p-Tzf"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysm-tM-Eyt">
+                                <rect key="frame" x="139" y="104" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Magnitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQH-54-s7L">
+                                <rect key="frame" x="146" y="75" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mtL-OJ-Jgd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="2er-uG-bmf"/>
-                            <constraint firstItem="p7q-js-dOE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="5kn-LR-JDJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nkg-Bd-9Lf" secondAttribute="bottom" constant="41" id="8iE-N0-5do"/>
-                            <constraint firstItem="WuT-pe-tUv" firstAttribute="baseline" secondItem="mtL-OJ-Jgd" secondAttribute="baseline" id="DPB-Tq-L4N"/>
-                            <constraint firstItem="XDj-Dy-noc" firstAttribute="leading" secondItem="pn6-LG-YU9" secondAttribute="leading" id="Fbo-wu-6dg"/>
-                            <constraint firstItem="WuT-pe-tUv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="LHy-SD-bFW"/>
-                            <constraint firstItem="WuT-pe-tUv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SKi-xs-kpP"/>
-                            <constraint firstItem="pn6-LG-YU9" firstAttribute="centerX" secondItem="nkg-Bd-9Lf" secondAttribute="centerX" id="Tdc-w8-ZxJ"/>
-                            <constraint firstItem="p7q-js-dOE" firstAttribute="centerX" secondItem="pn6-LG-YU9" secondAttribute="centerX" id="Uap-jO-jhv"/>
-                            <constraint firstItem="XDj-Dy-noc" firstAttribute="top" secondItem="WuT-pe-tUv" secondAttribute="bottom" constant="16" id="Vyx-sL-gnt"/>
-                            <constraint firstItem="XDj-Dy-noc" firstAttribute="baseline" secondItem="Po1-CX-3f2" secondAttribute="baseline" id="XFU-Gp-jMg"/>
-                            <constraint firstItem="mtL-OJ-Jgd" firstAttribute="trailing" secondItem="Po1-CX-3f2" secondAttribute="trailing" id="ZAh-pc-Qe7"/>
-                            <constraint firstItem="nkg-Bd-9Lf" firstAttribute="top" secondItem="pn6-LG-YU9" secondAttribute="bottom" constant="57" id="jAs-F4-WEP"/>
-                            <constraint firstItem="Po1-CX-3f2" firstAttribute="trailing" secondItem="pn6-LG-YU9" secondAttribute="trailing" id="mRb-Wb-c5B"/>
-                            <constraint firstItem="WuT-pe-tUv" firstAttribute="leading" secondItem="XDj-Dy-noc" secondAttribute="leading" id="rCk-qM-4dL"/>
-                            <constraint firstItem="pn6-LG-YU9" firstAttribute="top" secondItem="p7q-js-dOE" secondAttribute="bottom" constant="8" symbolic="YES" id="wpe-Mr-Szg"/>
+                            <constraint firstItem="QQH-54-s7L" firstAttribute="leading" secondItem="XDj-Dy-noc" secondAttribute="trailing" constant="33" id="09x-7h-ixa"/>
+                            <constraint firstItem="ysm-tM-Eyt" firstAttribute="centerX" secondItem="pn6-LG-YU9" secondAttribute="centerX" id="3l6-FA-lBr"/>
+                            <constraint firstItem="QQH-54-s7L" firstAttribute="centerX" secondItem="ysm-tM-Eyt" secondAttribute="centerX" id="4rN-xn-vYg"/>
+                            <constraint firstItem="pn6-LG-YU9" firstAttribute="top" secondItem="ysm-tM-Eyt" secondAttribute="bottom" constant="8" symbolic="YES" id="6Lr-5L-bi9"/>
+                            <constraint firstItem="WuT-pe-tUv" firstAttribute="leading" secondItem="XDj-Dy-noc" secondAttribute="leading" id="771-Ud-l57"/>
+                            <constraint firstItem="Po1-CX-3f2" firstAttribute="leading" secondItem="QQH-54-s7L" secondAttribute="trailing" constant="34" id="7kH-BO-Vsk"/>
+                            <constraint firstItem="WuT-pe-tUv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Emj-nn-D8k"/>
+                            <constraint firstItem="pn6-LG-YU9" firstAttribute="leading" secondItem="nkg-Bd-9Lf" secondAttribute="leading" id="H3K-Kb-ECT"/>
+                            <constraint firstItem="Po1-CX-3f2" firstAttribute="trailing" secondItem="pn6-LG-YU9" secondAttribute="trailing" id="HAq-Or-C4P"/>
+                            <constraint firstItem="XDj-Dy-noc" firstAttribute="leading" secondItem="pn6-LG-YU9" secondAttribute="leading" id="JxE-XT-JIr"/>
+                            <constraint firstItem="WuT-pe-tUv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OFX-q7-zgO"/>
+                            <constraint firstItem="WuT-pe-tUv" firstAttribute="baseline" secondItem="mtL-OJ-Jgd" secondAttribute="baseline" id="OsC-3O-diC"/>
+                            <constraint firstItem="XDj-Dy-noc" firstAttribute="top" secondItem="WuT-pe-tUv" secondAttribute="bottom" constant="16" id="Pzu-uT-kC9"/>
+                            <constraint firstItem="ysm-tM-Eyt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="RHW-Vz-ekE"/>
+                            <constraint firstItem="ysm-tM-Eyt" firstAttribute="top" secondItem="QQH-54-s7L" secondAttribute="bottom" constant="8" symbolic="YES" id="W9M-hT-MYF"/>
+                            <constraint firstItem="Po1-CX-3f2" firstAttribute="centerX" secondItem="p7q-js-dOE" secondAttribute="centerX" id="WD1-Yd-U9o"/>
+                            <constraint firstItem="XDj-Dy-noc" firstAttribute="baseline" secondItem="Po1-CX-3f2" secondAttribute="baseline" id="ahH-eE-lgF"/>
+                            <constraint firstItem="QQH-54-s7L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="gXJ-ql-ngf"/>
+                            <constraint firstItem="mtL-OJ-Jgd" firstAttribute="trailing" secondItem="Po1-CX-3f2" secondAttribute="trailing" id="ltL-9e-Nm7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nkg-Bd-9Lf" secondAttribute="bottom" constant="45" id="naV-eF-sqP"/>
+                            <constraint firstItem="mtL-OJ-Jgd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="p2c-lm-nOc"/>
+                            <constraint firstItem="nkg-Bd-9Lf" firstAttribute="top" secondItem="pn6-LG-YU9" secondAttribute="bottom" constant="53" id="wZI-cb-HeW"/>
+                            <constraint firstItem="nkg-Bd-9Lf" firstAttribute="baseline" secondItem="p7q-js-dOE" secondAttribute="baseline" id="xAR-nh-BXZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="latitude" destination="XDj-Dy-noc" id="4u5-0h-oNm"/>
+                        <outlet property="longitude" destination="Po1-CX-3f2" id="59z-o8-BWM"/>
+                        <outlet property="magnitude" destination="ysm-tM-Eyt" id="gne-Qo-DjT"/>
                         <outlet property="map" destination="pn6-LG-YU9" id="GLm-zn-WTN"/>
                     </connections>
                 </viewController>
