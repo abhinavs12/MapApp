@@ -34,5 +34,23 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func seeInMapApp(_ sender: UIButton) {
+        
+        let placemark = MKPlacemark(coordinate: self.mapLocation, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = "Awesome Place"
+        
+        //opens our location in map app
+        mapItem.openInMaps(launchOptions: [
+            
+            MKLaunchOptionsMapTypeKey: MKMapType.standard.rawValue,
+            MKLaunchOptionsMapCenterKey: self.map.region.center,
+            MKLaunchOptionsMapSpanKey: self.map.region.span
+            
+            
+            
+            ])
+        
+    }
 }
 
